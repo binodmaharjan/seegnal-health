@@ -9,7 +9,7 @@ export class RuleController {
    *
    */
 
-  async analyse(req: Request, res: Response) {
+  analyse = async (req: Request, res: Response) => {
     // Extract drugIds array from request body
     const { drugIds } = req.body;
     try {
@@ -24,5 +24,5 @@ export class RuleController {
         message: error.message,
       });
     }
-  }
+  };
 }
