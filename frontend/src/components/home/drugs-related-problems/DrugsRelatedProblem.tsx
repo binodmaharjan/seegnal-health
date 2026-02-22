@@ -3,7 +3,7 @@ function DrugsRelatedProblem() {
   return (
     <div>
       <h1 className="title">Drug-related problems</h1>
-      <p>Alerts</p>
+      <p>&nbsp;</p>
     </div>
   );
 }
