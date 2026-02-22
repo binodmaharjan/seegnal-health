@@ -2,7 +2,7 @@
 
 ## Overview
 
-A modern fullstack healthcare management application for drug interaction analysis and medication tracking built with React, TypeScript, Node.js, and PostgreSQL.
+A modern fullstack seegnal app built with React, TypeScript, Node.js, and PostgreSQL.
 
 ## 🚀 Quick Start (Docker)
 
@@ -11,7 +11,7 @@ Get the entire application running with one command:
 ```bash
 # Clone the repository
 git clone <repository-url>
-cd seegnal-eHealth
+cd seegnal-health
 
 # Start all services (PostgreSQL, Backend, Frontend)
 docker-compose up -d
@@ -22,9 +22,7 @@ docker-compose up -d
 # Login: yura.zharkovsky@seegnal.com / Abcd1234!
 ```
 
-That's it! The database will be automatically created and seeded.
-
-> 📖 For detailed Docker documentation, see [DOCKER.md](DOCKER.md)
+The database will be automatically created and seeded.
 
 ## Tech Stack
 
@@ -162,7 +160,7 @@ seegnal-eHealth/
 
 #### Option 2: Manual Setup
 
-- **Node.js** (v18 or higher)
+- **Node.js** (v20 or higher)
 - **PostgreSQL** database
 - **npm**
 
@@ -174,7 +172,7 @@ The easiest way to run the entire application with all dependencies:
 
 ```bash
 git clone <repository-url>
-cd seegnal-eHealth
+cd seegnal-health
 ```
 
 2. **Start all services:**
@@ -215,7 +213,7 @@ docker-compose down -v
 
 ```bash
 git clone <repository-url>
-cd seegnal-eHealth
+cd seegnal-health
 ```
 
 2. **Install root dependencies:**
@@ -284,7 +282,7 @@ VITE_API_URL=http://localhost:3000/api
 ````bash
 createdb seegnal
 ```🐳 Docker Commands
-> 📖 See [DOCKER.md](DOCKER.md) for comprehensive Docker documentation
+
 ### Development with Docker
 
 ```bash
@@ -471,7 +469,7 @@ The application uses JWT (JSON Web Tokens) for authentication:
 4. Token is sent with each API request in Authorization header
 5. Backend middleware validates token for protected routes
 
-## 💾 Database Models
+## Database Models
 
 ### User Model
 
@@ -490,7 +488,7 @@ The application uses JWT (JSON Web Tokens) for authentication:
 
 - Drug interaction rules and warnings
 
-## 🚀 Development
+## Development
 
 Start the development environment:
 
