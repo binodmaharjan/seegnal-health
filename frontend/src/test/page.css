@@ -1,0 +1,58 @@
+.page {
+  position: relative;
+  padding: 50px;
+}
+
+.medication-list {
+  list-style: none;
+  padding: 0;
+
+  &__item {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.capsule {
+  /* background: #ff4d4f; */
+  /* color: white; */
+  /* padding: 6px 14px; */
+  /* border-radius: 999px; */
+  /* font-size: 12px; */
+  /* font-weight: 500; */
+  /* white-space: nowrap; */
+  /* width: 100%; */
+}
+
+.overlay-container {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  width: 50%;
+  height: calc(100vh - 250px);
+  background: transparent;
+  display: flex;
+  gap: 50px;
+  margin-top: -150px;
+  z-index: 1;
+}
+
+.overlay-content {
+  position: relative;
+  background: #e5e3e4;
+  width: 100px;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  z-index: 1000;
+  height: 100%;
+  min-height: 600px;
+}

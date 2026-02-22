@@ -1,0 +1,12 @@
+export { default as feedBackIcon } from "./send-feedback-white.svg";
+export { default as logoSeegnal } from "./logo-seegnal.svg";
+export { default as NotificationIcon } from "./notification-bell-white.svg";
+export { default as AboutIcon } from "./icon-dropdown-about.png";
+export { default as FileIcon } from "./icon-dropdown-file.png";
+export { default as HelpIcon } from "./icon-dropdown-help.png";
+export { default as MenuIcon } from "./burger-menu.svg";
+export { default as HomeIcon } from "./sidebar-home.svg";
+export { default as PatientIcon } from "./sidebar-patient-factors.svg";
+export { default as ConsiderIcon } from "./sidebar-consider-avoiding.svg";
+export { default as MoreIcon } from "./sidebar-more.svg";
+export { default as KeycloakLogo } from "./keycloak-logo-text.png";

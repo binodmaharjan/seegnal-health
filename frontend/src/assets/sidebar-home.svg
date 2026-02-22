@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .a {
+                fill: none;
+                stroke: #1c2275;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 0.83px;
+            }
+        </style>
+    </defs>
+    <polygon class="a" points="20 7.45 6.12 19.75 10.27 19.75 10.27 32.55 17.11 32.55 17.11 23.59 22.89 23.59 22.89 32.55 29.73 32.55 29.73 19.75 33.88 19.75 20 7.45">
+    </polygon>
+<script xmlns=""/></svg>

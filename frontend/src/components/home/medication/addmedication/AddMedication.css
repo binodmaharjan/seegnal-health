@@ -1,0 +1,83 @@
+.finish-btn {
+  display: block;
+  border-radius: 15px;
+  background-color: #1c2275;
+  border: none;
+  padding: 5px 20px;
+  margin: 45px auto;
+  font-size: 14px;
+  outline: 0 !important;
+  color: #fff;
+  text-align: center;
+}
+
+.add-medication-header {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f2f1;
+
+  span {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1f2733;
+  }
+}
+
+.drug-search-title {
+  margin: 32px 0 0 12px;
+  color: #2929298a;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.add-medication-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 0px;
+  width: 100%;
+  border-top: 1px solid #e0e0e0;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 0 50px;
+}
+
+.add-medication-body {
+  width: 95%;
+  padding: 0;
+}
+
+.selected-drugs-wrapper {
+  ul {
+    padding: 0;
+
+    li {
+      list-style: none;
+      padding: 5px 0;
+    }
+
+    li:nth-child(odd) {
+      background-color: #f9fafc;
+    }
+
+    li:nth-child(even) {
+      background-color: #fff;
+    }
+  }
+  .selected-drugs-title {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+.selected-drug {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 5px 0;
+  /* text-transform: uppercase; */
+}

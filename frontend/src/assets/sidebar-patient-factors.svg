@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+                        <defs>
+                            <style>
+                                        .a {
+                                            fill: none;
+                                            stroke: #1c2275;
+                                            stroke-linecap: round;
+                                            stroke-linejoin: round;
+                                            stroke-width: 0.83px;
+                                        }
+                                    </style>
+                        </defs>
+                        <circle class="a" cx="18.65" cy="11.25" r="5.59"/>
+                        <path class="a" d="M28.12,24.12c0-3.57-2.77-5.3-6.19-5.3H15.36A6.19,6.19,0,0,0,9.17,25v6.22a1,1,0,0,0,1,1H20.78V24.15Z"/>
+                        <path class="a" d="M31.29,24.14H20.78v8.12a1.88,1.88,0,0,0,1.87,1.88h9.86c-1.27-.59-1.22-1.12-1.22-1.8Z"/>
+                        <line class="a" x1="23.07" y1="29.99" x2="29.25" y2="29.99"/>
+                        <line class="a" x1="23.07" y1="31.66" x2="29.25" y2="31.66"/>
+                        <line class="a" x1="23.07" y1="28.24" x2="29.25" y2="28.24"/>
+                        <line class="a" x1="23.07" y1="26.5" x2="29.25" y2="26.5"/>
+                    <script xmlns=""/></svg>

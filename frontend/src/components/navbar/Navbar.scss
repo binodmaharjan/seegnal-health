@@ -1,0 +1,67 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  // right: 15px;
+  right: 0;
+
+  min-width: 875px;
+  height: 48px;
+  font-family: "Rubik", sans-serif;
+  background: #1c2275;
+  z-index: 4;
+
+  .brand-logo {
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    min-width: auto;
+    height: 30px;
+  }
+}
+
+// Left Section
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  width: 80px;
+  height: 30px;
+}
+
+// Expert View Section
+
+.expert-view-wrapper {
+  margin: 0 50px;
+}
+.expert-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.expert-text {
+  color: #fff;
+  font-weight: 700;
+  margin-right: 5px;
+  font-size: 10pt;
+}
+
+// Right Section
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 31px;
+  padding-right: 20px;
+}
+
+.navbar-menu-icon {
+  cursor: pointer;
+  font-size: 18px;
+  position: relative;
+}

@@ -1,0 +1,26 @@
+.logout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.logout-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 10pt;
+  padding: 0;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.logout-username {
+  font-weight: 500;
+  color: #fff;
+  line-height: 14px;
+}

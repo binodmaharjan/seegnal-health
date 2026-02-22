@@ -1,0 +1,22 @@
+.btn-with-img {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 10pt;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  font-size: 10pt;
+  font-weight: 400;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+  }
+}

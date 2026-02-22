@@ -1,0 +1,99 @@
+.settings {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 25px;
+
+  .settings-icon {
+    width: 25px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &-img {
+      width: 25px;
+      height: 39px;
+    }
+  }
+
+  .settings-dropdown {
+    position: fixed;
+    top: 50px;
+    right: 0;
+    padding-top: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(5px);
+    transition:
+      opacity 0.2s ease,
+      transform 0.2s ease;
+    z-index: 1000;
+  }
+
+  &:hover .settings-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .settings-list {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    list-style: none;
+    padding: 6px 0;
+    margin-top: -10px;
+    min-width: 220px;
+    position: relative;
+
+    // Arrow
+    &::after {
+      content: "";
+      position: absolute;
+      top: -8px;
+
+      /* Instead of right:120px */
+      left: 50%;
+      transform: translateX(-50%);
+
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 8px solid #fff;
+      filter: drop-shadow(0 -2px 2px rgba(0, 0, 0, 0.1));
+    }
+  }
+
+  .settings-item {
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #f2f2f2;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #d4d4d4;
+    }
+
+    &-icon {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+    }
+  }
+}

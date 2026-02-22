@@ -1,0 +1,18 @@
+.no-alerts {
+  position: absolute;
+  top: 23%;
+  right: 0;
+  width: 50%;
+  left: 45%;
+  background: #fff;
+  height: calc(100% - 12%);
+  display: flex;
+}
+.no-alerts-img {
+  background-image: url("./../../../../src/assets/no-alert.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 263px;
+  height: 255px;
+}

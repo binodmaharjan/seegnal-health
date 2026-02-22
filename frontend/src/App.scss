@@ -1,0 +1,25 @@
+#root {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.btn-link {
+  background: transparent;
+  display: inline-block;
+  border: none;
+  color: #1c2275;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0 4px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.alert-dialog {
+  margin: -28px;
+  border-radius: 0;
+  max-width: 850px;
+}
