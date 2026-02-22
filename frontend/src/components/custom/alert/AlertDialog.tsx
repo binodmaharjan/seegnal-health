@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Modal from "../modal/Modal";
+import "./AlertDialog.scss";
 
 interface AlertDialogProps {
   isOpen: boolean;
@@ -35,17 +36,7 @@ function AlertDialog({
         className="alert-dialog"
         showCloseButton={false}
       >
-        <div
-          style={{
-            textAlign: "center",
-            backgroundColor: "#f9fafc",
-            padding: "20px",
-            color: "#de0000",
-            fontWeight: "700",
-            borderBottomLeftRadius: "8px",
-            borderBottomRightRadius: "8px",
-          }}
-        >
+        <div className="alert-content">
           <p>{message}</p>
         </div>
       </Modal>
