@@ -4,7 +4,7 @@
 
 A modern fullstack seegnal app built with React, TypeScript, Node.js, and PostgreSQL.
 
-## 🚀 Quick Start (Docker)
+## Quick Start (Docker)
 
 Get the entire application running with one command:
 
@@ -57,7 +57,7 @@ The database will be automatically created and seeded.
 - **Docker Compose** - Multi-container orchestration
 - **Nginx** - Web server for frontend production builds
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 seegnal-eHealth/
@@ -149,7 +149,7 @@ seegnal-eHealth/
 └── package.json                  # Root package.json
 ```
 
-## 🛠 Installation
+## Installation
 
 ### Prerequisites
 
@@ -164,7 +164,7 @@ seegnal-eHealth/
 - **PostgreSQL** database
 - **npm**
 
-### Option 1: Quick Start with Docker 🐳
+### Option 1: Quick Start with Docker
 
 The easiest way to run the entire application with all dependencies:
 
@@ -238,7 +238,7 @@ npm install
 cd ..
 ```
 
-## ⚙️ Configuration
+## Configuration
 
 ### Docker Configuration (Default)
 
@@ -281,7 +281,7 @@ VITE_API_URL=http://localhost:3000/api
 
 ````bash
 createdb seegnal
-```🐳 Docker Commands
+```Docker Commands
 
 ### Development with Docker
 
@@ -503,6 +503,6 @@ This will:
 - Start frontend dev server on `http://localhost:5173`
 - Enable hot reload for both applications
 
-## 👤 Author
+## Author
 
 **Binod Maharjan**
