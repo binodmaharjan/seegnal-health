@@ -4,6 +4,6 @@ import { authorize } from "../../middleware/authorize";
 
 const router = Router();
 
-router.get("/", drugController.getAllDrugs);
+router.get("/", authorize, drugController.getAllDrugs);
 
 export default router;

@@ -4,6 +4,6 @@ import { authorize } from "../../middleware/authorize";
 
 const router = Router();
 
-router.post("/", ruleController.analyse);
+router.post("/", authorize, ruleController.analyse);
 
 export default router;
