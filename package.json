@@ -1,0 +1,13 @@
+{
+  "name": "seegnal clone",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -k \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "build": "npm run build --prefix backend && npm run build --prefix frontend",
+    "start": "concurrently -k \"npm run start --prefix backend\" \"npm run preview --prefix frontend\"",
+    "db:seed": "npm run db:seed --prefix backend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
