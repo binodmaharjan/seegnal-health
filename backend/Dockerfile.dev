@@ -1,0 +1,26 @@
+# Development Dockerfile for Backend
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Install netcat for healthcheck
+RUN apk add --no-cache netcat-openbsd
+
+# Copy package files
+COPY package*.json ./
+
+# Install all dependencies (including dev dependencies)
+RUN npm install
+
+# Copy source code
+COPY . .
+
+# Expose port
+EXPOSE 3000
+
+# Copy and use entrypoint script
+COPY docker-entrypoint.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh
+
+# Start development server with nodemon
+ENTRYPOINT ["docker-entrypoint.sh"]
