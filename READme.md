@@ -263,7 +263,7 @@ Create a `.env` file in the `backend/` directory:
 PORT=3000
 HOST_URL=http://localhost:5173
 DATABASE_URL="postgresql://postgres:password@localhost:5432/seegnal?schema=public"
-JWT_SECRET="your_secret_key_here"
+JWT_SECRET="secret_key"
 JWT_EXPIRES_IN="7d"
 ```
 
