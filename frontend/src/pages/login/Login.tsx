@@ -4,6 +4,8 @@ import { useLogin } from "../../hooks/useLogin";
 import { useNavigate } from "react-router";
 import { useAuth } from "../../hooks/useAuth";
 import { KeycloakLogo } from "../../assets";
+import FormInput from "@/components/custom/input/FormInput";
+import FormPassword from "@/components/custom/input/FormPassword";
 
 export default function Login() {
   const navigate = useNavigate();
@@ -11,7 +13,6 @@ export default function Login() {
   const { login: loginReq, loading, error } = useLogin();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [showPassword, setShowPassword] = useState(false);
 
   const onSubmit = async (e: React.SubmitEvent) => {
     e.preventDefault();
@@ -35,63 +36,20 @@ export default function Login() {
           <h2 className="title">Sign in to your account</h2>
           <form onSubmit={onSubmit}>
             <>
-              <div className="form-group email-field">
-                <label className="label">Email</label>
-                <input
-                  type="text"
-                  className={error && error.email ? "input error" : "input"}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-                {error && error?.email && (
-                  <span className="alert-icon">
-                    <i className="fas fa-circle-exclamation fa-icon"></i>
-                  </span>
-                )}
-                {error && error.email && (
-                  <span className="error-msg">
-                    {error.email || error.message}
-                  </span>
-                )}
-              </div>
+              <FormInput
+                label="Email"
+                type="email"
+                value={email}
+                className={"email-field"}
+                onChange={(e) => setEmail(e.target.value)}
+                error={error && error.email ? error.email : undefined}
+              />
 
-              <div className="form-group">
-                <label className="label">Password</label>
-                <div className="password-field">
-                  <div className="password-wrapper">
-                    <input
-                      type={showPassword ? "text" : "password"}
-                      className={
-                        error && error.password
-                          ? "password-input error"
-                          : "password-input"
-                      }
-                      onChange={(e) => setPassword(e.target.value)}
-                    />
-
-                    {error && error?.password && (
-                      <span className="alert-icon-password">
-                        <i className="fas fa-circle-exclamation fa-icon"></i>
-                      </span>
-                    )}
-                  </div>
-                  <div
-                    className="eye-icon-wrapper"
-                    tabIndex={0}
-                    onClick={() => setShowPassword(!showPassword)}
-                  >
-                    {!showPassword ? (
-                      <i className="fas fa-eye-slash fa-icon"></i>
-                    ) : (
-                      <i className="fas fa-eye fa-icon"></i>
-                    )}
-                    {/* <span
-                      className="eye-icon"
-                      onClick={() => setShowPassword(!showPassword)}
-                      style={{ cursor: "pointer" }}
-                    ></span> */}
-                  </div>
-                </div>
-              </div>
+              <FormPassword
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                error={error && error.password ? error.password : undefined}
+              />
 
               <a href="#" className="forgot-link">
                 Forgot Password?
